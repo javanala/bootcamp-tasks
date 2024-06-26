@@ -1,0 +1,285 @@
+@import url("./fonts.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-secondary-900: rgb(17, 24, 39);
+  --color-secondary-800: rgb(31, 41, 55);
+  --color-secondary-700: rgb(55, 65, 81);
+  --color-secondary-600: rgb(75, 85, 99);
+  --color-secondary-500: rgb(107, 114, 128);
+  --color-secondary-400: rgb(156, 163, 175);
+  --color-secondary-300: rgb(209, 213, 219);
+  --color-secondary-200: rgb(229, 231, 235);
+  --color-secondary-100: rgb(243, 244, 246);
+  --color-secondary-50: rgb(249, 250, 251);
+  --color-secondary-0: rgb(255, 255, 255);
+
+  --color-primary-900: rgb(77, 112, 255);
+  --color-primary-800: rgb(92, 124, 255);
+  --color-primary-700: rgb(92, 124, 255);
+  --color-primary-600: rgb(128, 153, 255);
+  --color-primary-500: rgb(146, 167, 255);
+  --color-primary-400: rgb(164, 182, 255);
+  --color-primary-300: rgb(183, 197, 255);
+  --color-primary-200: rgb(201, 211, 255);
+  --color-primary-100: rgb(219, 226, 255);
+  --color-primary-50: rgb(228, 233, 255);
+
+  --border-radius-tiny: 3px;
+  --border-radius-sm: 5px;
+  --border-radius-md: 7px;
+  --border-radius-lg: 9px;
+
+  --color-success: rgb(0, 192, 115);
+  --color-warning: rgb(255, 153, 0);
+  --color-error: rgb(255, 71, 87);
+  --color-red-700: rgb(185, 28, 28);
+  --color-red-800: rgb(153, 27, 27);
+  --color-red-500: rgb(239, 68, 68);
+  --color-red-300: rgb(252, 165, 165);
+  --color-red-100: rgb(254, 226, 226);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--color-secondary-100);
+}
+
+body {
+  font-family: Vazirmatn;
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 1153px;
+  max-width: 1280;
+  height: 100vh;
+  margin: 0 auto;
+  margin-top: 153px;
+  overflow: hidden;
+  /* background-color: #66ffff; */
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-size: 33px;
+  color: #878787;
+  /* background-color: gold; */
+  font-weight: 800;
+}
+
+/* .header-search {
+  width: 500px;
+  font-size: 17px;
+  color: #cacaca;
+  border: 2px solid #cacaca;
+  border-radius: 18px;
+  padding: 20px;
+} */
+
+::placeholder {
+  color: #cacaca;
+  opacity: 1; /* Firefox */
+}
+
+.transactions {
+  margin-top: 50px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 700;
+  color: #878787;
+  padding: 30px;
+}
+
+.trasaction-title {
+  margin-bottom: 3rem;
+  /* background-color: blue; */
+}
+
+.transactions-table_container {
+  border-radius: 20px;
+  /* background-color: blue; */
+  border: 2.5px solid #ececec;
+  overflow: hidden;
+}
+
+.transactions-table {
+  /* background-color: gold; */
+  /* border: 2px solid #ececec; */
+}
+
+.transactin-table_title,
+.transactin-table_content {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.transactin-table_title {
+  background-color: #ececec;
+}
+
+.transactin-table_content {
+  padding: 1.5rem;
+  border-bottom: 2px solid #ececec;
+  /* overflow: hidden; */
+}
+
+.input-container {
+  position: relative;
+  /* background-color: gold; */
+}
+
+.input-container input {
+  width: 500px;
+  font-size: 17px;
+  color: #cacaca;
+  border: 2px solid #cacaca;
+  border-radius: 18px;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  /* background-color: green; */
+}
+
+.input-container i {
+  position: absolute;
+  right: 45rem; /* Adjust to align icon as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #cacaca; /* Adjust icon color */
+  font-size: 2rem;
+}
+
+.load {
+  position: relative;
+  top: 0%;
+  left: -5%;
+  transform: translateX(-50%) translateY(100%);
+
+  background-color: #009baf;
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-lg);
+  padding: 2rem 5rem;
+
+  /* 1. control modal width */
+  width: calc(100vw - 2rem);
+  max-width: 50rem;
+  z-index: 20;
+
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+select {
+  /* -webkit-appearance: none; */
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.2rem;
+
+  color: var(--primaryColor);
+  /* border-radius: 0.5rem; */
+  background-color: transparent;
+
+  cursor: pointer;
+
+  /* background-color: red; */
+  z-index: 1;
+}
+
+.select-arrow {
+  position: absolute;
+  top: 20%;
+  right: 20px;
+  transform: translateY(-20%);
+  pointer-events: none;
+  z-index: 2; /* Ensure the arrow is above the select */
+  transition: transform 0.5s ease;
+}
+
+.select-arrowd {
+  position: absolute;
+  top: 20%;
+  right: 20px;
+  transform: translateY(-20%);
+  pointer-events: none;
+  z-index: 2; /* Ensure the arrow is above the select */
+  transition: transform 0.5s ease;
+}
+
+select option {
+  background-color: #fff;
+  color: #000;
+}
+
+.select {
+  /* background-color: blue; */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 2px solid var(--secondayGrey);
+  position: relative;
+  font-weight: bold;
+  width: 6rem;
+  /* margin-top: 0rem; */
+  /* height: 3rem; */
+}
+
+.price-arrow {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.2rem;
+  color: var(--primaryColor);
+}
+
+.nav__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  max-height: 0;
+  /* overflow: hidden; */
+  /* opacity: 0; */
+  transition: all 0.4s ease-out;
+}
+
+.price,
+.date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}

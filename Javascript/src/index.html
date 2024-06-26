@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <span class="header-title">لیست تراکنش ها </span>
+        <div class="input-container hidden">
+          <input
+            type="text"
+            class="header-search"
+            name=""
+            id=""
+            placeholder="جستجو تراکنش ..."
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="transactions hidden">
+        <div class="trasaction-title">لیست تراکنش های شما</div>
+        <div class="transactions-table_container">
+          <div class="transactions-table">
+            <div class="transactin-table_title">
+              <div class="transaction-table_row">ردیف</div>
+              <div class="transaction-table_type">نوع تراکنش</div>
+
+              <div class="price">
+                <div class="transaction-table_price">مبلغ</div>
+                <div class="select">
+                  <select class="price-select">
+                    <option class="price-asc" value="i">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </option>
+                    <option class="price-asc" value="price-asc">کمترین</option>
+                    <option class="price-desc" value="price-desc">بیشترین</option>
+                  </select>
+                  <i class="fas fa-chevron-down select-arrow"></i>
+                </div>
+              </div>
+
+              <div>
+                <!-- <div class="nav__toggler">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <ul class="list nav__list">
+                  <li class="nav__item"><a href="#">item 1</a></li>
+                  <li class="nav__item"><a href="#">item 2</a></li>
+                  <li class="nav__item"><a href="#">item 3</a></li>
+                  <li class="nav__item"><a href="#">item 4</a></li>
+                  <li class="nav__item cta">
+                    <a href="#" class="btn btn--primary">download</a>
+                  </li>
+                </ul> -->
+              </div>
+              <div class="transaction-table_code">شماره پیگیری</div>
+
+              <div class="date">
+                <div class="transaction-table_date">تاریخ تراکنش</div>
+                <div class="select">
+                  <select class="date-select">
+                    <option class="date-asc" value="">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </option>
+                    <option class="date-asc" value="date-asc">قدیمی تر</option>
+                    <option class="date-desc" value="date-desc">جدیدتر</option>
+                  </select>
+                  <i class="fas fa-chevron-down select-arrowd"></i>
+                </div>
+              </div>
+
+              <!-- <div class="transaction-table_date">
+                <span class="transaction-table_price">تاریخ تراکنش</span>
+                <select>
+                  تاریخ تراکنش
+                  <option value="date-asc">acen</option>
+                  <option value="date-desc">dis</option>
+                </select>
+              </div> -->
+            </div>
+            <div class="transactin-table_contents">
+              <!-- <div class="transactin-table_content">
+              <div class="transaction-table_crow">1</div>
+              <div class="transaction-table_ctype">افزایش اعتبار</div>
+              <div class="transaction-table_cprice">1000</div>
+              <div class="transaction-table_ccode">12345</div>
+              <div class="transaction-table_cdate">2023</div>
+            </div>
+           -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="load">بارگذاری تراکنش ها</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+@import url("./fonts.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary-100: #afcedd;
+  --color-primary: #234894;
+  --color-gray: #696969;
+  --color-secondary: #219f95;
+  --color-white: #fff;
+
+  --border-radius-tiny: 4px;
+  --border-radius-sm: 6px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--color-secondary-100);
+}
+
+body,
+* {
+  font-family: Vazirmatn;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 40px 20px;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 320px)); */
+  gap: 2rem;
+}
+
+.card {
+  /* width: 300px;
+  height: 200px; */
+  padding: 20px;
+}
+
+.card__header,
+.card__register {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* HEADER*/
+.btn--primary {
+  background-color: var(--color-primary-100);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-sm);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--color-primary);
+}
+
+.upload--text {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: 600px;
+  margin-right: 1rem;
+}
+
+.card__header .date {
+  font-size: 1.2rem;
+  color: var(--color-gray);
+}
+
+/*CARD REGISTER */
+.card__register {
+  align-items: flex-end;
+}
+
+.card__register .apply {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.card__register .register-number {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-gray);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+}
+
+.card__register .name {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+img {
+  margin-top: 2rem;
+  width: 40px;
+  border-radius: var(--border-radius-lg);
+  margin-left: 1rem;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 2.2rem 1rem;
+  /* width: 160px; */
+  text-align: center;
+  border-radius: var(--border-radius-md);
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.block {
+  padding: 4rem 2rem;
+}
